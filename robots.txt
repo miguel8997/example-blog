@@ -1,0 +1,1 @@
+Sitemap: https://miguel8997.github.io/example-blog/sitemap.xml
