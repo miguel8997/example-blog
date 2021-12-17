@@ -25,7 +25,7 @@ jtd.onReady = function(ready) {
 
 // Show/hide mobile menu
 
-// function initNav() {
+// function initNav() { 
 //     const mainNav = document.querySelector('.js-main-nav');
 //     const pageHeader = document.querySelector('.js-page-header');
 //     const navTrigger = document.querySelector('.js-main-nav-trigger');
