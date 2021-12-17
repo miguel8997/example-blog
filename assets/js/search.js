@@ -4,7 +4,7 @@
 
 (function (jtd, undefined) {
 
-// Event handling
+// Event handling 
 
 jtd.addEvent = function(el, type, handler) {
   if (el.attachEvent) el.attachEvent('on'+type, handler); else el.addEventListener(type, handler);
