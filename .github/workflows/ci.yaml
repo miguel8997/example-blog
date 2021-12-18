@@ -56,3 +56,11 @@ jobs:
       with:
         deploy_key: ${{ secrets.SSH_DEPLOY_KEY }}
         publish_dir: ./_site
+        
+    - name: Deploy to Staging server
+      uses: easingthemes/ssh-deploy@main
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SERVER_DP_KEY }}
+        REMOTE_HOST: ${{ secrets.SERVER }}
+        REMOTE_USER: ${{ secrets.USERNAME }}
+        TARGET: ${{ secrets.PRODUCTION_DIR }}
