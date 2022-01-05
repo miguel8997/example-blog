@@ -401,9 +401,11 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link, h4:hover .a
 
 .search-result-highlight { color: #2e0137; font-weight: bold; }
 
-table { white-space: normal; max-width: 100%; font-size: 100%; border: none; }
+table { display: block !important; overflow-x: auto; white-space: nowrap; font-size: 75%; border: none; }
 
 table th { text-align: center !important; }
+
+table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 ::-webkit-scrollbar { width: 14px; height: 18px; }
 
@@ -415,17 +417,7 @@ table th { text-align: center !important; }
 
 .output_text.output_execute_result pre { white-space: pre-wrap; }
 
-.output_wrapper { overflow: auto; }
-
-.svg-icon.orange { width: 30px; height: 23px; }
-
-.code_cell { margin: 1.5rem 0px !important; }
-
-pre code { font-size: 15px !important; }
-
-.youtube-iframe-wrapper { position: relative; padding-bottom: 56.10%; height: 0; overflow: hidden; }
-
-.youtube-iframe-wrapper iframe, .youtube-iframe-wrapper object, .youtube-iframe-wrapper embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+@media only screen and (max-width: 900px) { /* for mobile phone and tablet devices */ .output_wrapper { overflow: scroll; } }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
