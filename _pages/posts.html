@@ -8,19 +8,21 @@ search_exclude: true
 <style type="text/css" media="screen">
     .flex-container {
         display: flex;
-        justify-content: center;
+        
     }
     .info{
         text-align: left;
-        padding: 10px;
+        margin-left: 20px;
+        padding: 5px;
+    }
+    .img{
     }
     .personal{
         line-height : 5px;
     }
     h1{       
-        font-weight:bold;
-        font-size:2em;
         font-family:'Helvetica','Verdana','Monaco',sans-serif;
+        margin: 0;
     }
     h3{
         font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
@@ -29,23 +31,19 @@ search_exclude: true
 
 <div class="flex-container">
     <div class="img">
-        <img src="{{site.baseurl}}/images/me4.jpg" width="225" height="254">
+        <img src="me4.jpg" width="225" height="254">
     </div>
     <div class="info">
-        <div class="name">
-            <h1>Austin Z. Henley</h1>
-        </div>
+        <h1>Austin Z. Henley</h1>
         <div class="personal">
             <h3>Assistant Professor</h3>
             <h3>Department of Electrical Engineering and Computer Science</h3>
             <h3>University of Tennessee - Knoxville</h3>
         </div>
-        <br>
     </div>
 </div>
-<br>
 
-<h1>Publications</h1>
+# Publications
 
 <h2>2022</h2>
 If you are not redirected automatically, follow for my CV.<a href='{{site.baseurl}}/misc/cv.pdf' target='_blank'>(PDF)</a>
